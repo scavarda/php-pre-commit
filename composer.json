@@ -1,6 +1,11 @@
 {
     "name": "scavarda/php-pre-commit",
     "description": "Test di hook pre-commit git (php)",
+    "autoload": {
+        "psr-4": {
+            "Planet\\": "src/Planet/"
+        }
+    },
     "authors": [
         {
             "name": "scavarda",
@@ -10,17 +15,6 @@
     "require": {
     },
     "require-dev": {
-        "bruli/php-git-hooks": "^4.12"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
-        ],
-        "post-update-cmd": [
-            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
-        ]
-    },
-    "config": {
-        "bin-dir": "bin"
+        "squizlabs/php_codesniffer": "^3.0"
     }
 }

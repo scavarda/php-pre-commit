@@ -14,7 +14,6 @@ DEFINE('CONST_STALKER_STB_NAME'   ,'MAG250',FALSE);
 DEFINE('CONST_STALKER_STB_ID'     ,'4'     ,FALSE);
 DEFINE('CONST_STALKER_MODEL_NAME' ,'MAG250',FALSE);
 DEFINE('CONST_STB_MODEL_MAG250_ID','4'     ,FALSE);
-
 class clsDALSTBEquipments extends clsUIPageBase{
     private   $_methodName = "";
     private   $_className  = "";
@@ -858,4 +857,5 @@ class clsDALSTBEquipments extends clsUIPageBase{
         $ret = json_encode($ret);
         die($ret);
     }
-}//class
+}
+//class
