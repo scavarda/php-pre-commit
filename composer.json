@@ -1,0 +1,26 @@
+{
+    "name": "scavarda/php-pre-commit",
+    "description": "Test di hook pre-commit git (php)",
+    "authors": [
+        {
+            "name": "scavarda",
+            "email": "marcos@planetsite.it"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "bruli/php-git-hooks": "^4.12"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
+        ],
+        "post-update-cmd": [
+            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
