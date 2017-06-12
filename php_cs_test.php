@@ -1,7 +1,9 @@
 <?php
 
-$phpFile = __DIR__ . '/src/Scavarda/Code/Php/Input.php';
+//$phpFile = __DIR__ . '/src/Scavarda/Code/Php/Input.php';
+//
+//require __DIR__ . '/vendor/autoload.php';
+//
+//$phpFile
 
-require __DIR__ . '/vendor/autoload.php';
-
-$phpFile
+exit(1);
